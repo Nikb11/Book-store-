@@ -1,0 +1,20 @@
+<style>
+h1 {
+    color: cornflowerblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 300%;
+}
+
+</style>
+
+<h1>Book Store</h1>
+
+{% for book in object_list %}
+<ul>
+    <li>Title:{{ book.title}}</li>
+        <li>Author:{{book.author}}</li>
+        <li>Category:{{book.category}}</li>
+        <li>Price:{{book.price}}</li>
+        <button type= "button">Buy now</button>
+    </ul>
+{% endfor%}
